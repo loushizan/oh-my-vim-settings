@@ -1,4 +1,4 @@
 oh-my-vim-settings
 ==================
 
-vim settings
+VIM settings
