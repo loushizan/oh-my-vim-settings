@@ -155,4 +155,4 @@ au BufNewFile,BufRead *.liquid set filetype=html
 "let g:vimrc_homepage='http://' 
 
 " JsBeautify
-map <c-f> :call JsBeautify()<cr>
+"map <c-f> :call JsBeautify()<cr>
