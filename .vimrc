@@ -19,10 +19,7 @@ filetype indent on
 
 "主题
 colorscheme railscasts
-"colorscheme ir_black
-"colorscheme blackboard
-"colorscheme night
-"colorscheme twilight
+"colorscheme vividchalk
 
 "语法样式开启
 syntax on
