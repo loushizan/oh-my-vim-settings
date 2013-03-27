@@ -141,7 +141,9 @@ set guioptions-=T
 
 "总是显示状态行
 set laststatus=2
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [LEN=%L]\ [POS=%04l,%04v][%p%%]
+if has("statusline")
+  set statusline=%F%m%r%h%w\ %{&fileencoding?&fileencoding:&encoding}\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [LEN=%L]\ [POS=%04l,%04v][%p%%]
+endif
 
 "遇到.liquid的文件vim会自动应用html的语法
 au BufNewFile,BufRead *.liquid set filetype=html
