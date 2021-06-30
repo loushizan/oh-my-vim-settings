@@ -9,7 +9,7 @@ if has("autocmd")
 endif
 
 "vim-pathogen
-call pathogen#infect()
+"call pathogen#infect()
 
 "载入文件类型插件
 filetype plugin on 
@@ -18,8 +18,10 @@ filetype plugin on
 filetype indent on 
 
 "主题
-colorscheme railscasts
+"colorscheme railscasts
 "colorscheme vividchalk
+"colorscheme xcodedarkhc
+colorscheme archman
 
 "语法样式开启
 syntax on
@@ -29,7 +31,7 @@ set helplang=cn
 
 "设置字体大小
 "set guifont=Monaco:h12
-set gfn=Panic\ Sans:h18
+set gfn=SF\ Sans:h18
 
 "当使用了图形界面，并且环境变量 LANG 中不含“.”（即没有规定编码）时，把 Vim 的内部编码设为 UTF-8
 set encoding=utf-8
