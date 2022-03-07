@@ -18,10 +18,9 @@ filetype plugin on
 filetype indent on 
 
 "主题
-"colorscheme railscasts
-"colorscheme vividchalk
-"colorscheme xcodedarkhc
-colorscheme archman
+set t_Co=256
+set background=dark
+colorscheme PaperColor
 
 "语法样式开启
 syntax on
@@ -41,9 +40,6 @@ set history=100
 
 "带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,- 
-
-"高亮显示普通txt文件（需要txt.vim脚本）
-au BufRead,BufNewFile *  setfiletype txt 
 
 "不需要保持和 vi 非常兼容
 "set nocompatible
@@ -143,12 +139,12 @@ set guioptions-=T
 
 "总是显示状态行
 set laststatus=2
-if has("statusline")
-  set statusline=%F%m%r%h%w\ %{&fileencoding?&fileencoding:&encoding}\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [LEN=%L]\ [POS=%04l,%04v][%p%%]
-endif
 
 "遇到.liquid的文件vim会自动应用html的语法
 au BufNewFile,BufRead *.liquid set filetype=html
+
+"高亮显示普通txt文件（需要txt.vim脚本）
+"au BufNewFile,BufRead * set filetype=txt 
 
 "自动加载作者信息
 "let g:vimrc_author='LeoLou' 
