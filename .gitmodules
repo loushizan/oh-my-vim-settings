@@ -1,0 +1,6 @@
+[submodule "pack/colors/start/papercolor-theme"]
+	path = pack/colors/start/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme.git
+[submodule "pack/plugins/start/lightline"]
+	path = pack/plugins/start/lightline
+	url = https://github.com/itchyny/lightline.vim
